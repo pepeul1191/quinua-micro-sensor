@@ -1,6 +1,3 @@
-require 'sequel'
-require 'sqlite3'
+require 'rbejdb'
 
-Sequel::Model.plugin :json_serializer
-
-DB = Sequel.connect('sqlite://db/db_accesos.db')
+DB = EJDB.open("..db/quinua", EJDB::DEFAULT_OPEN_MODE)

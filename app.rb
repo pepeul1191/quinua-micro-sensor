@@ -36,4 +36,8 @@ class MyApp < Sinatra::Base
   get '/' do
     'Error: Url Vacía'
   end
+
+  get '/test/conexion' do
+    'Ok'
+  end
 end

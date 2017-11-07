@@ -23,9 +23,6 @@ class MyApp < Sinatra::Base
         i = i + 1
       end
       db.close #Close the database
-      puts "1 +++++++++++++++++++++++++++++++++++++++++++++++"
-      puts i
-      puts "2 +++++++++++++++++++++++++++++++++++++++++++++++"
-      data
+      i.to_s
     end
 end
